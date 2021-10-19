@@ -1,7 +1,9 @@
+import style from './App.module.scss'
+
 export function App() {
   return (
-    <div className="App">
-      <h1>hellow Worldiii</h1>
-    </div>
+    <main className={style.contentWrapper}>
+      <h1>Hellow</h1>
+    </main>
   )
 }
