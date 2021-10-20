@@ -46,10 +46,12 @@ export function AuthProvider(props: AuthProvider) {
 
     localStorage.setItem('@dowhile:token', token)
 
+    api.defaults.headers.common.authorization = `Bearer ${token}`
+
     setUser(user)
   }
 
-  function LogOut() {
+  function signOut() {
     setUser(null)
 
     localStorage.removeItem('@dowhile:token')
@@ -81,7 +83,7 @@ export function AuthProvider(props: AuthProvider) {
   }, [])
 
   return (
-    <AuthContext.Provider value={{ signInUrl, LogOut, user }}>
+    <AuthContext.Provider value={{ signInUrl, signOut, user }}>
       {props.children}
     </AuthContext.Provider>
   )
