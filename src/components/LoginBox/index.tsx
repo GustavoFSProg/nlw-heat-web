@@ -8,7 +8,7 @@ export function LoginBox() {
 
   return (
     <div className={styles.loginBoxWrapper}>
-      <strong>Entre ecompartilhe sua Mensagem</strong>
+      <strong>Entre e compartilhe sua Mensagem</strong>
       <a href={signInUrl} className={styles.singInWhitGitHub}>
         <VscGithubInverted size={24} />
         <span style={{ marginLeft: '8px' }}>Entrar com Github</span>
