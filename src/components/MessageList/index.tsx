@@ -31,12 +31,12 @@ export function MessageList() {
 
       {messages.map((items) => {
         return (
-          <ul className={styles.messageList}>
+          <ul key={items.id} className={styles.messageList}>
             <li className={styles.message}>
               <p className={styles.messageContent}>{items.text}</p>
               <div className={styles.messageUser}>
                 <div className={styles.userImage}>
-                  <img src="https://github.com/gustavoFSprog.png" alt=" Gustavo Sohne" />
+                  <img src="https://github.com/gustavoFSprog.png" alt={items.user.name} />
                 </div>
                 <span>{items.user.name}</span>
               </div>
