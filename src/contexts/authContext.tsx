@@ -35,7 +35,7 @@ export const AuthContext = createContext(null)
 export function AuthProvider(props: AuthProvider) {
   const [user, setUser] = useState<User | null>()
 
-  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=cf9fd61483abffe374e6&redirect_uri=http://localhost:3000 `
+  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=cf9fd61483abffe374e6&redirect_uri=https://nlw-hea.netlify.app/ `
 
   async function singIn(gitHubCode: string) {
     const response = await api.post<AuthResponse>('/authenticate', {
