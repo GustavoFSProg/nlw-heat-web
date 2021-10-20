@@ -15,7 +15,7 @@ type Message = {
 
 const messagesQueue: Message[] = []
 
-const socket = io('http://localhost:8000')
+const socket = io('https://nlw-heat-api.herokuapp.com/')
 
 socket.on('new_message', (newMessage) => {
   messagesQueue.push(newMessage)
