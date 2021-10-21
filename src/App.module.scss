@@ -33,3 +33,27 @@
   right: -200px;
   top: 0;
 }
+
+.contentSigned::before {
+  content: '';
+  height: 100vh;
+  width: 420px;
+  background: url('./assets/background.svg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -200px;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .contentSigned::before {
+    content: '';
+    height: 100vh;
+    width: 20px;
+    background: none;
+    // position: absolute;
+    // right: -200px;
+    margin-left: -1200px;
+    top: 0;
+  }
+}
