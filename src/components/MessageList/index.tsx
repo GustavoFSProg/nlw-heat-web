@@ -58,7 +58,7 @@ export function MessageList() {
                 <div className={styles.userImage}>
                   <img src="https://github.com/gustavoFSprog.png" alt={items.user.name} />
                 </div>
-                <span style={{ width: '200px', marginLeft: '-20px' }}>{items.user.name}</span>
+                <span style={{ width: '200px', marginLeft: '-25px' }}>{items.user.name}</span>
               </div>
             </li>
           </ul>
