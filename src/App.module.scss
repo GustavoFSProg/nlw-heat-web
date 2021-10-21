@@ -8,6 +8,19 @@
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+  .contentWrapper {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    // column-gap: 120px;
+    // position: relative;
+    // width: 100px;
+  }
+}
+
 .contentSigned::before {
   content: '';
   height: 100vh;

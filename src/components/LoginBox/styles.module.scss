@@ -17,6 +17,13 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .loginBoxWrapper {
+    width: 81%;
+    height: 150vh;
+  }
+}
+
 .singInWhitGitHub {
   background: #ffcd1e;
   margin-top: 32px;
@@ -35,5 +42,11 @@
 
   &:hover {
     filter: brightness(0.9);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .singInWhitGitHub {
+    width: 300px;
   }
 }

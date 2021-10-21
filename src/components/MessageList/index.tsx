@@ -47,7 +47,7 @@ export function MessageList() {
 
   return (
     <div className={styles.messageListWrapper}>
-      <img src={logoImg} alt="logo" style={{ paddingBottom: '80px' }} />
+      <img className={styles.logoImage} src={logoImg} alt="logo" />
 
       {messages.map((items) => {
         return (
@@ -58,7 +58,7 @@ export function MessageList() {
                 <div className={styles.userImage}>
                   <img src="https://github.com/gustavoFSprog.png" alt={items.user.name} />
                 </div>
-                <span>{items.user.name}</span>
+                <span style={{ width: '200px', marginLeft: '-20px' }}>{items.user.name}</span>
               </div>
             </li>
           </ul>
